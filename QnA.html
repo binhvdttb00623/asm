@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hỏi & đáp - Trường Trung học Phổ thông Minh Khôi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header {
+            margin: 0 auto;
+            padding: 20px;
+        }
+        nav {
+            margin: 0 auto;
+            padding: 10px;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            justify-content: space-around;
+        }
+        nav ul li {
+            padding: 10px;
+        }
+        .language {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            align-items: center;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .language img {
+            width: 30px;
+        }
+        .search-bar {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .search-bar input {
+            padding: 5px;
+        }
+        .main-content {
+            display: flex;
+        }
+        .main-content img {
+            width: 100%;
+        }
+        .sidebar {
+            width: 20%;
+            padding: 10px;
+        }
+        .content {
+            width: 80%;
+            border: 1px solid #000000;
+            padding: 10px;
+        }
+        .news-event, .experiential-activities {
+            margin: 20px 0;
+            border: 1px solid #000000;
+            padding: 10px;
+        }
+        .news-event img, .experiential-activities img {
+            width: 30%;
+        }
+        footer {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        footer a {
+            color: white;
+            margin: 0 10px;
+        }
+        .container {
+            display: flex;
+            justify-content: flex-end; /* Đẩy phần tử con về bên phải */
+            margin: 20px; /* Khoảng cách từ các phần tử xung quanh */
+        }
+
+        .fanpage {
+            width: 340px; /* Đặt chiều rộng cố định cho phần tử */
+            margin: 20px; /* Khoảng cách từ các phần tử xung quanh */
+            padding: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Thêm bóng đổ nếu cần */
+            background-color: #fff; /* Đặt màu nền cho phần tử */
+        }
+        .menu>ul>li {
+            display: inline-block;
+        }
+        .menu>ul>li>a {
+            display: block;
+        }
+        .menu>ul{
+            padding: 0px;
+            margin: 0;
+            list-style: none;
+            border-radius: 5px;
+            background-color: orangered;
+            text-align: center;
+        }
+        .menu>ul>li>a{
+            text-decoration: none;
+            font-size: larger ;
+            color: white;
+            padding: 0 10PX;
+            line-height: 40px;
+        }
+        .menu>ul>li>a:hover{
+            color: yellow;
+        }
+        .tu{
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+        }
+        .ty{
+            display: flex;
+            justify-content: space-between;
+        }
+        .ty img{
+            padding-right: 10px;
+        }
+        .sy{
+            display: flex;
+            justify-content: center;
+        }
+        .fl{
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .google-map{
+            width: 340px; /* Đặt chiều rộng cố định cho phần tử */
+            margin: 20px; /* Khoảng cách từ các phần tử xung quanh */
+            padding: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Thêm bóng đổ nếu cần */
+            background-color: #fff; /* Đặt màu nền cho phần tử */
+        }
+        .events, .category{
+            border: 1px solid #000000;
+            padding: 10px;
+        }
+        .section-title {
+            margin: 20px 0;
+            font-weight: bold;
+            font-size: 32px;
+        }
+        .qa-section {
+            margin-bottom: 20px;
+            border: 1px solid #000000;
+            padding: 10px;
+        }
+        .qa-section h3 {
+            margin: 10px 0;
+        }
+        .qa-section p {
+            margin: 5px 0;
+            padding-left: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="sy">
+            <img src="image/St._Richard's_school_(Omaha)_from_SE_1.jpeg" alt="" style="width: 100%;">
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="Home.html">Trang Chủ</a></li>
+                <li><a href="Info.html">Giới Thiệu</a></li>
+                <li><a href="#">Tổ Chuyên Môn</a></li>
+                <li><a href="#">Đoàn Thể Hội</a></li>
+                <li><a href="#">Học Sinh</a></li>
+                <li><a href="#">Tin Tức</a></li>
+                <li><a href="#">Thông Báo</a></li>
+                <li><a href="Contact.html">Liên Hệ</a></li>
+                <li><a href="Feedback.html">Góp ý</a></li>
+                <li><a href="QnA.html">Hỏi & đáp</a></li>
+            </ul>
+        </nav>
+        <div class="language">
+            <img src="image/pngtree-template-emblem-blank-picture-image_3620231.png" alt="Logo" style="width: 100px;">
+            <div class="ty">
+                <img src="image/vi.svg" alt="Tiếng Việt">
+                <img src="image/us.svg" alt="English">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search...">
+                    <button>Search</button>
+                </div>
+            </div>
+            
+        </div>
+    </header>
+    <div class="main-content">
+        <div class="sidebar">
+            <div class="category">
+                <h3>DANH MỤC</h3>
+                <ul>
+                    <li><a href="#">Hỏi Đáp Chung</a></li>
+                    <li><a href="#">Hỏi Đáp Học Tập</a></li>
+                    <li><a href="#">Hỏi Đáp Hoạt Động</a></li>
+                    <li><a href="#">Hỏi Đáp Khác</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <div class="section-title">CÂU HỎI THƯỜNG GẶP</div>
+            <div class="qa-section">
+                <h3>Q: Làm thế nào để đăng ký nhập học?</h3>
+                <p>A: Bạn có thể đăng ký nhập học trực tuyến trên trang web của trường hoặc đến trực tiếp văn phòng tuyển sinh để hoàn thành các thủ tục cần thiết.</p>
+            </div>
+            <div class="qa-section">
+                <h3>Q: Học phí của trường là bao nhiêu?</h3>
+                <p>A: Học phí được cập nhật hàng năm. Bạn có thể xem chi tiết học phí trên trang web của trường hoặc liên hệ với phòng tài chính để biết thêm thông tin.</p>
+            </div>
+            <div class="qa-section">
+                <h3>Q: Trường có ký túc xá cho học sinh không?</h3>
+                <p>A: Có, trường có ký túc xá dành cho học sinh ở xa. Thông tin về ký túc xá và cách đăng ký có thể tìm thấy trên trang web của trường.</p>
+            </div>
+            <div class="qa-section">
+                <h3>Q: Trường có các hoạt động ngoại khóa nào?</h3>
+                <p>A: Trường tổ chức nhiều hoạt động ngoại khóa bao gồm câu lạc bộ thể thao, nghệ thuật, khoa học và các chương trình tình nguyện. Bạn có thể tham gia các câu lạc bộ này để phát triển kỹ năng và sở thích của mình.</p>
+            </div>
+        </div>
+    </div>
+    <div class="tu">
+        <div class="google-map">
+        <h2>GOOGLE MAP</h2>
+        <div style="width: 100%; height: 225px;">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345094735!2d144.95373531531655!3d-37.816279279751955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577d05564f7e20!2zQXVzdHJhbGlhIFZpY3RvcmlhIMSQLiBNZWxib3VybmUgVMOibiBTw6FjaCwgTWVsYm91cm5lIFZJQyA4MDAwLCDgsIBWaWV0bmFt!5e0!3m2!1svi!2s!4v1599999999999!5m2!1svi!2s"
+                width="340"
+                height="225"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
+    <div class="container">
+        <div class="fanpage">
+            <h2>FANPAGE CHÍNH THỨC</h2>
+            <div id="fb-root"></div>
+            <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0" data-width="340" data-height="300" nonce="123456"></script>
+            <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="" data-width="340" data-height="300" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                <blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore">
+                    <a href="https://www.facebook.com/facebook">Facebook</a>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+
+</div>
+    <footer>
+        <p>Trường THPT Minh Khôi</p>
+        <p>Địa chỉ: 123 Hòa Bình, P. Bình Minh, Q. Thanh Xuân, Hà Nội</p>
+        <p>Hotline: 1800 3mb</p>
+        <div>
+            <a href="#">Trang chủ</a>
+            <a href="#">Sơ đồ</a>
+            <a href="#">Liên hệ</a>
+        </div>
+        <div style="padding-top: 15px;">
+            <a href="#"><img width="35px" src="image/facebook-logo-2019.png" alt="Facebook"></a>
+            <a href="#"><img width="35px" src="image/instagram-icon-white-on-gradient.png" alt="Instagram"></a>
+            <a href="#"><img width="35px" src="image/vecteezy_youtube-logo-png-youtube-icon-transparent_18930575.png" alt="YouTube"></a>
+        </div>
+        <p>Bản quyền © wibucter</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên hệ - Trường Trung học Phổ thông Minh Khôi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header {
+            margin: 0 auto;
+            padding: 20px;
+        }
+        nav {
+            margin: 0 auto;
+            padding: 10px;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            justify-content: space-around;
+        }
+        nav ul li {
+            padding: 10px;
+        }
+        .language {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            align-items: center;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .language img {
+            width: 30px;
+        }
+        .search-bar {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .search-bar input {
+            padding: 5px;
+        }
+        .main-content {
+            display: flex;
+        }
+        .main-content img {
+            width: 100%;
+        }
+        .sidebar {
+            width: 20%;
+            padding: 10px;
+        }
+        .content {
+            width: 80%;
+            padding: 10px;
+        }
+        .news-event, .experiential-activities {
+            margin: 20px 0;
+            border: 1px solid #000000;
+            padding: 10px;
+        }
+        .news-event img, .experiential-activities img {
+            width: 30%;
+        }
+        footer {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        footer a {
+            color: white;
+            margin: 0 10px;
+        }
+        .fanpage {
+            width: 340px; /* Đặt chiều rộng cố định cho phần tử */
+            margin: 20px; /* Khoảng cách từ các phần tử xung quanh */
+            padding: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Thêm bóng đổ nếu cần */
+            background-color: #fff; /* Đặt màu nền cho phần tử */
+        }
+        .menu>ul>li {
+            display: inline-block;
+        }
+        .menu>ul>li>a {
+            display: block;
+        }
+        .menu>ul{
+            padding: 0px;
+            margin: 0;
+            list-style: none;
+            border-radius: 5px;
+            background-color: orangered;
+            text-align: center;
+        }
+        .menu>ul>li>a{
+            text-decoration: none;
+            font-size: larger ;
+            color: white;
+            padding: 0 10PX;
+            line-height: 40px;
+        }
+        .menu>ul>li>a:hover{
+            color: yellow;
+        }
+        .tu{
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+        }
+        .ty{
+            display: flex;
+            justify-content: space-between;
+        }
+        .ty img{
+            padding-right: 10px;
+        }
+        .sy{
+            display: flex;
+            justify-content: center;
+        }
+        .fl{
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        main{
+            max-width: 75%;
+            margin: 0 auto;
+            padding-left: 40px;
+            padding-right: 40px;
+            margin-bottom: 20px;
+        }
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .container2 {
+            width: 50%;
+            border: 1px solid black;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-right: 20px;
+        }
+        .container {
+            display: flex;
+            justify-content: flex-end; 
+            width: 50%;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        fieldset {
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        legend {
+            font-weight: bold;
+        }
+
+        .form-button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            border: none;
+            color: #fff;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        .form-button:hover {
+            background-color: #0056b3;
+        }
+        .etc {
+            width: 100%; 
+        }
+        .noti {
+            border: 1px solid black;
+            padding-left: 10px;
+            padding-right: 10px;
+            background-color: white;
+        }
+        .noti2 {
+            margin-bottom: 20px;
+            border: 1px solid black;
+            padding-left: 10px;
+            padding-right: 10px;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="sy">
+            <img src="image/St._Richard's_school_(Omaha)_from_SE_1.jpeg" alt="" style="width: 100%;">
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="Home.html">Trang Chủ</a></li>
+                <li><a href="Info.html">Giới Thiệu</a></li>
+                <li><a href="#">Tổ Chuyên Môn</a></li>
+                <li><a href="#">Đoàn Thể Hội</a></li>
+                <li><a href="#">Học Sinh</a></li>
+                <li><a href="#">Tin Tức</a></li>
+                <li><a href="#">Thông Báo</a></li>
+                <li><a href="Contact.html">Liên Hệ</a></li>
+                <li><a href="Feedback.html">Góp ý</a></li>
+                <li><a href="QnA.html">Hỏi & đáp</a></li>
+            </ul>
+        </nav>
+        <div class="language">
+            <img src="image/pngtree-template-emblem-blank-picture-image_3620231.png" alt="Logo" style="width: 100px;">
+            <div class="ty">
+                <img src="image/vi.svg" alt="Tiếng Việt">
+                <img src="image/us.svg" alt="English">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search...">
+                    <button>Search</button>
+                </div>
+            </div>
+            
+        </div>
+    </header>
+    <main>
+        <div class="flex-container">
+            <div class="container2">
+                <h1>Thông tin liên lạc của bạn</h1>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Họ và tên:</label>
+                        <input type="text" id="name" class="form-control" tabindex="1" required>
+                    </div>
+        
+                    <fieldset>
+                        <legend>Giới tính</legend>
+                        <label>
+                            <input type="radio" name="gender" value="male" required> Nam
+                        </label>
+                        <label>
+                            <input type="radio" name="gender" value="female"> Nữ
+                        </label>
+                    </fieldset>
+        
+                    <div class="form-group">
+                        <label for="birthdate">Ngày sinh:</label>
+                        <input type="date" id="birthdate" class="form-control" required>
+                    </div>
+        
+                    <div class="form-group">
+                        <label> Email :</label>
+                        <br>
+                        <input type="text" class="form-control" tabindex="1">
+                    </div>
+                    <div class="form-group">
+                        <label> Điện thoại :</label>
+                        <br>
+                        <input type="text" class="form-control" tabindex="1">
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="notes">Ghi chú:</label>
+                        <textarea id="notes" class="form-control" rows="5"></textarea>
+                    </div>
+        
+                    <hr>
+        
+                    <div class="form-group">
+                        <input type="submit" value="Gửi" class="form-button">
+                        <input type="reset" value="Nhập lại" class="form-button">
+                    </div>
+                </form>
+            </div>
+            <div class="container">
+                <div class="etc">
+                    <div class="noti2">
+                        <h2>Thông tin liên hệ</h2>
+                        <p>Địa chỉ: Số 123, Đường Hòa Bình, Phường Bình Minh, Quận Thanh Xuân, Thành phố Hà Nội, Việt Nam</p>
+                        <p>Điện thoại: (024) 1234 5678</p>
+                        <p>Email: info@minhkhoi.edu.vn</p>
+                        <p>Giờ làm việc: <br>
+                            Thứ Hai - Thứ Sáu: 07:30 - 17:30<br>
+                            Thứ Bảy: 08:00 - 12:00<br>
+                            Chủ Nhật: Nghỉ</p>
+                        <p>Đường dây nóng (Hotline): 0987 654 321</p>
+                    </div>
+                    <div class="noti">
+                        <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.966307096691!2d106.95404967451945!3d10.965915755670995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174e720db7f0987%3A0x56b98acb13c5b147!2zVHLGsOG7nW5nIFRp4buDdSBI4buNYyBUcuG6p24gUXXhu5FjIFRv4bqjbg!5e0!3m2!1svi!2s!4v1717772321910!5m2!1svi!2s"
+                        width="100%"
+                        height="415"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>                    
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Trường THPT Minh Khôi</p>
+        <p>Địa chỉ: 123 Hòa Bình, P. Bình Minh, Q. Thanh Xuân, Hà Nội</p>
+        <p>Hotline: 1800 3mb</p>
+        <div>
+            <a href="#">Trang chủ</a>
+            <a href="#">Sơ đồ</a>
+            <a href="#">Liên hệ</a>
+        </div>
+        <div style="padding-top: 15px;">
+            <a href="#"><img width="35px" src="image/facebook-logo-2019.png" alt="Facebook"></a>
+            <a href="#"><img width="35px" src="image/instagram-icon-white-on-gradient.png" alt="Instagram"></a>
+            <a href="#"><img width="35px" src="image/vecteezy_youtube-logo-png-youtube-icon-transparent_18930575.png" alt="YouTube"></a>
+        </div>
+        <p>Bản quyền © wibucter</p>
+    </footer>
+</body>
+</html>
